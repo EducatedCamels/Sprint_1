@@ -1,10 +1,10 @@
 ### Task
 ---
 
-### Background
+### Context
 ---
 
-### How to do the task
+### Proccess 
 ---
 
 ### Outcome
