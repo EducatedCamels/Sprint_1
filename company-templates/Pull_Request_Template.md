@@ -10,15 +10,15 @@
         -"Other: " (MUST provide additional description with this option)
 
 # 3. MIGRATIONS :
-#### ==YES== (has been migrated) *or* ==NO== (has not been migrated)
+#### ***YES*** (has been migrated) *or* ***NO*** (has not been migrated)
 ![m'lady](https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_220,w_220/v1407701678/tq5u0yf5fi2sgtqfl0ji.jpg)
 
 # 4. DESCRIPTION :
 #### *Must include the following*
-#### ==*Rationale*== *(reason behind updated changes):*
+#### ***Rationale*** *(reason behind updated changes):*
 ##### *Example:*
     "Created PR because Legal_Dept Class wasn't properly inheriting from Department Class."
-### ==*Expected behavior of changes:*==
+### ***Expected behavior of changes:***
 ##### *Example:* 
     "Legal_Dept Class now properly inherits all properties and methods of Department Class."
 
@@ -38,10 +38,10 @@
 
 # 7. STEPS TO RUN PROJECT:
 #### *Must include the following*
-#### ==INSTALLATION STEPS:== 
+#### ***INSTALLATION STEPS:***
 ##### *Example:* 
     "In your terminal run the following command in a shell prompt: pip install django REST"
-#### ==RUN STEPS:== 
+#### ***RUN STEPS:***
 ##### *Example:* 
     "1) Point your Commmand Line Interface to the project directory, then write the following command:
         python manage.py runserver
@@ -51,17 +51,17 @@
 # 8. TESTING THE CODE:
 
 #### *Must include the following*
-#### ==NAME OF TEST:== 
+#### ***NAME OF TEST:***
 ##### *Example:* 
     "test_palindrome"
-#### ==FAIL/PASS:== 
+#### ***FAIL/PASS:***
 ##### *Example:*  
     "THIS TEST IS CURRENTLY PASSING WITH AN OK."
-#### ==DESCRIPTION:== 
+#### ***DESCRIPTION:** 
 ##### *Example:* 
     "THIS P.R. COMPLETES THE UNIT TESTING FOR THE PALINDROME CLASS."
 
-#### ==HOW TO RUN IN COMMAND LINE:==
+#### ***HOW TO RUN IN COMMAND LINE:***
 ##### *Example:*  
     python -m unittest discover -s . -p "Test*.py" -v
 
