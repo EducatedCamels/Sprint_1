@@ -1,17 +1,26 @@
 ### Task
 ---
-
+(Detailed overview)
 ### Context
 ---
+(Reasoning for this ticket)
 
-### Proccess 
+### Before starting ticket
+---
+(Software needed and docs to reference)
+- [ ] Example
+- [ ] Example
+- [ ] Example
+
+### The process 
 ---
 - [ ] Example
 - [ ] Example
 - [ ] Example
 
-### Outcome
+### Outcome/expected behavior
 ---
+
 
 ### Other related tickets
 ---
