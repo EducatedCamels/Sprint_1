@@ -1,13 +1,16 @@
 ### Task
 ---
+Example:
 To create an Employee Object Class for our Database via Django REST Framework. The Objective of this task is to expose Employee data for the client.
 ### Context
 ---
+Example:
 An Employee class table is required for the integrity of the database. It provides a primary key that links to two different tables(Employee_In_Training_Program, Employee_Gets_Computer) and a foreign key(Department_Id property) that links to one table(Department). Please refer to the ERD table:[ERD](https://www.draw.io/?state=%7B%22ids%22:%5B%220B-4vZ-mgQ31vc2cxUVVOamFFU2c%22%5D,%22action%22:%22open%22,%22userId%22:%22100761558679069137145%22%7D#G0B-4vZ-mgQ31vc2cxUVVOamFFU2c)
 - For more resources on this prodects click [Here]()
 
 ### The process 
 ---
+Example: (Checkbox content will change depending on ticket requirements)
 - [ ] Pull Down Bangazon Project onto your local computer and create a new git branch
 
 -  [ ] Go to the Bangazon directory 
@@ -24,5 +27,6 @@ An Employee class table is required for the integrity of the database. It provid
 
 ### Outcome/expected behavior
 ---
- In all, 4 files will be changed. After these changes, the Class created will be ready to migrate using the Django REST framework. The outcome of the migrated files will expose the Employee Class that can also be linked to the other data tables in the database. 
+Example:
+In all, 4 files will be changed. After these changes, the Class created will be ready to migrate using the Django REST framework. The outcome of the migrated files will expose the Employee Class that can also be linked to the other data tables in the database. 
 
