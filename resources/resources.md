@@ -1,7 +1,7 @@
 ### Helpful Django and Django Rest framework resources
 ---
 - [Django tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/#writing-your-first-django-app-part-1)
-- [Rest framework](tutorialhttp://www.django-rest-framework.org/)
+- [Rest framework tutorial](http://www.django-rest-framework.org/)
 
 ### Prodject data structure
 
