@@ -6,9 +6,9 @@
 
 ### Proccess 
 ---
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ] Example
+- [ ] Example
+- [ ] Example
 
 ### Outcome
 ---
