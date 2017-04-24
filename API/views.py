@@ -27,3 +27,9 @@ class CustomerViewSet(viewsets.ModelViewSet):
     serializer_class = CustomerSerializer
 
 
+class Product_TypeViewSet(viewsets.ModelViewSet):
+    '''
+    API endpoint that allows groups to be viewed or edited.
+    '''    
+    queryset = Product_Type.objects.all()   
+    serializer_class = Product_TypeSerializer
