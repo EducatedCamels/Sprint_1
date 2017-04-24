@@ -33,3 +33,10 @@ class PaymentTypeViewSet(viewsets.ModelViewSet):
     '''
     queryset = Customer.objects.all().order_by('Account_Number')
     serializer_class = PaymentTypeSerializer
+
+class Product_TypeViewSet(viewsets.ModelViewSet):
+    '''
+    API endpoint that allows groups to be viewed or edited.
+    '''    
+    queryset = Product_Type.objects.all()   
+    serializer_class = Product_TypeSerializer

@@ -11,3 +11,12 @@ class PaymentType(models.Model):
     Account_Number = models.IntegerField()
     #Customer ID is equal to just an instance of the Customer Class
     Customer_ID = models.ForeignKey(Customer)
+
+class Product_Type(models.Model):
+	"""
+	Purpose: Expose Product_Type data to Client
+	Author: Dara Thomas
+	Method: none (yet)
+	"""
+	Category = models.CharField(max_length = 30)
+
