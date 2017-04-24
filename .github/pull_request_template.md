@@ -1,43 +1,42 @@
-## 1. TITLE :
+## 1. TITLE:
 
 
-## 2. STATUS :
+## 2. STATUS:
 
 
-## 3. MIGRATIONS :
-#### ***YES*** (has been migrated) *or* ***NO*** (has not been migrated)
+## 3. MIGRATIONS:
+***YES*** (has been migrated) *or* ***NO*** (has not been migrated)
 
 
-## 4. DESCRIPTION :
-#### ***Rationale*** *(reason behind updated changes):*
-#### ***Expected behavior of changes:***
+## 4. DESCRIPTION:
+***Rationale(reason behind updated changes)***
+***Expected behavior of changes***
 
 
-## 5. RELATED TICKETS :
+## 5. RELATED TICKETS:
 
 
 
-## 6. FILES CHANGED :
+## 6. FILES CHANGED:
 
 
 
 ## 7. STEPS TO RUN PROJECT:
 
-#### ***INSTALLATION STEPS:***
+#### ***Installation Steps***
 
-#### ***RUN STEPS:***
+#### ***Run steps:***
 
     
 ## 8. TESTING THE CODE:
 
+***Name of test:***
 
-#### ***NAME OF TEST:***
+***Fail/ Pass:***
 
-#### ***FAIL/PASS:***
+***Description***
 
-#### ***DESCRIPTION***
-
-***HOW TO RUN IN COMMAND LINE***
+***How to run in command line***
 
 
 
