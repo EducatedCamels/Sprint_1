@@ -1,34 +1,34 @@
-# 1. TITLE :
+## 1. TITLE :
 
 
-# 2. STATUS :
+## 2. STATUS :
 
 
-# 3. MIGRATIONS :
+## 3. MIGRATIONS :
 #### ***YES*** (has been migrated) *or* ***NO*** (has not been migrated)
 
 
-# 4. DESCRIPTION :
+## 4. DESCRIPTION :
 #### ***Rationale*** *(reason behind updated changes):*
 #### ***Expected behavior of changes:***
 
 
-# 5. RELATED TICKETS :
+## 5. RELATED TICKETS :
 
 
 
-# 6. FILES CHANGED :
+## 6. FILES CHANGED :
 
 
 
-# 7. STEPS TO RUN PROJECT:
+## 7. STEPS TO RUN PROJECT:
 
 #### ***INSTALLATION STEPS:***
 
 #### ***RUN STEPS:***
 
     
-# 8. TESTING THE CODE:
+## 8. TESTING THE CODE:
 
 
 #### ***NAME OF TEST:***
