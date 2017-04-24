@@ -26,7 +26,7 @@
 
 #### ***Installation Steps***
 
-#### ***Run steps:***
+#### ***Run steps***
 
     
 ## 8. TESTING THE CODE:
