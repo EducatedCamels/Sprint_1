@@ -18,3 +18,12 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Customer
         fields = ('url', 'First_Name', 'Last_Name', 'Created')  
+
+
+class ProductSerializer(serializers.HyperlinkedModelSerializer):
+
+    class Meta:
+        model = Product
+        fields = ('url', 'Price', 'Title', 'Product_Type_ID', 'Description', 'Customer_ID', 'Date_Created')
+
+
