@@ -10,6 +10,7 @@
 
 ## 4. DESCRIPTION:
 ***Rationale(reason behind updated changes)***
+
 ***Expected behavior of changes***
 
 
@@ -30,9 +31,9 @@
     
 ## 8. TESTING THE CODE:
 
-***Name of test:***
+***Name of test***
 
-***Fail/ Pass:***
+***Fail/ Pass***
 
 ***Description***
 
