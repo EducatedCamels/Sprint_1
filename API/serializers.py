@@ -17,4 +17,9 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Customer
-        fields = ('url', 'First_Name', 'Last_Name', 'Created')  
+        fields = ('url', 'First_Name', 'Last_Name', 'Created')
+
+class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = PaymentType
+        fields = ('url', 'Account_Number', 'Customer_ID')

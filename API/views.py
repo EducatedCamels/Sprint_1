@@ -22,8 +22,14 @@ from API.models import *
 class CustomerViewSet(viewsets.ModelViewSet):
     '''
     API endpoint that allows groups to be viewed or edited.
-    '''    
+    '''
     queryset = Customer.objects.all().order_by('Last_Name')
     serializer_class = CustomerSerializer
 
 
+class PaymentTypeViewSet(viewsets.ModelViewSet):
+    '''
+    API endpoint
+    '''
+    queryset = Customer.objects.all().order_by('Account_Number')
+    serializer_class = PaymentTypeSerializer
