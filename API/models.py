@@ -11,8 +11,6 @@ class Customer(models.Model):
 	last_name = models.CharField(max_length = 25)
 	created = models.DateField()
 
-    	def __str__(self):
-            return self.First_Name + self.Last_Name
 
 class Product(models.Model):
     '''author: Bri Wyatt
