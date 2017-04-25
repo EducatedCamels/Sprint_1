@@ -48,6 +48,23 @@ class OrderViewSet(viewsets.ModelViewSet):
     Purpose: Queries database for Order data and sets up view for Order
     '''
     queryset = Order.objects.all().order_by('customer')
+
+
+    serializer_class = OrderSerializer    
+
+
+class ComputerViewSet(viewsets.ModelViewSet):
+    '''
+
+    API endpoint that allows Computers to be viewed or edited.
+        sorted by purchase date attribute
+
+    Author: Dean Smith
+    Purpose: Queries database for Computer data and sets up view for Computer Class (ordered by purchase date)
+    '''    
+    queryset = Computer.objects.all().order_by('purchase_date')
+    serializer_class = ComputerSerializer
+
     serializer_class = OrderSerializer    
 
 class TrainingProgramViewSet(viewsets.ModelViewSet):
@@ -59,7 +76,7 @@ class TrainingProgramViewSet(viewsets.ModelViewSet):
     queryset = TrainingProgram.objects.all()
     serializer_class = TrainingProgramSerializer 
 
-
+    
 class ProductOrderViewSet(viewsets.ModelViewSet):
     '''
     Author: Miriam Rozenbaum

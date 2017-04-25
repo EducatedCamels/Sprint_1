@@ -48,6 +48,21 @@ class Product(models.Model):
     created = models.DateField()
 
 
+class Computer(models.Model):
+    '''author: Dean Smith
+    
+       This Class will act as API endpoint for Products
+
+        Attributes           : Computer ID
+        purchase_date        : The date when the company purchased the computer
+        decommission_date    : the date when computer is decommissioned by the company
+        computer_type        : Brand of company computer
+    '''
+    
+    purchase_date = models.DateField()
+    decommision_date = models.DateField()
+    computer_type = models.CharField(max_length=20)
+
 class TrainingProgram(models.Model):
     """
     Purpose: Expose Training-Program data to Client
@@ -69,7 +84,7 @@ class ProductOrder(models.Model):
     order = models.ForeignKey(Order)
     
 class Department(models.Model):
-	'''
+	  '''
     Purpose: Expose Department data to Client
     Author: Harry Epstein
     Method: none (yet)
