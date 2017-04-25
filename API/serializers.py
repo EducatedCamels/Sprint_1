@@ -7,7 +7,6 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
     """
     Purpose: Takes database query for Customer data (from queryset on views.py) and serializes into json format
     Author: Educated Camels
-    Method: none (yet)
     """
     class Meta:
         model = Customer
@@ -18,7 +17,6 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
     """
     Purpose: Takes database query for Product data (from queryset on views.py) and serializes into json format
     Author: Bri Wyatt
-    Method: none (yet)
     """
     class Meta:
         model = Product
@@ -29,7 +27,6 @@ class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
     """
     Purpose: Takes database query for Product Type data (from queryset on views.py) and serializes into json format
     Author: Dara Thomas
-    Method: none (yet)
     """
     class Meta:
         model = ProductType
@@ -40,7 +37,6 @@ class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
     """
     Purpose: Takes database query for Payment Type data (from queryset on views.py) and serializes into json format
     Author: Harry Epstein
-    Method: none (yet)
     """
     class Meta:
         model = PaymentType
@@ -51,7 +47,6 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
     """
     Purpose: Takes database query for Order data (from queryset on views.py) and serializes into json format
     Author: Miriam Rozenbaum
-    Method: none (yet)
     """
     class Meta:
         model = Order
