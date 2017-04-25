@@ -34,6 +34,16 @@ class PaymentType(models.Model):
     customer = models.ForeignKey(Customer)
 
 class Order(models.Model):
+    '''author: Miriam Rozenbaum
+    
+       This Class will act as API endpoint for Order
+
+        Attributes:
+        customer            : Customer ID
+        created             : the date the order was created
+        payment_type        : type of payment used for order 
+    
+    '''
     created = models.DateField()
     customer = models.ForeignKey(Customer) 
     payment_type = models.ForeignKey(PaymentType)   
@@ -46,7 +56,7 @@ class Product(models.Model):
 
         Attributes:
         customer            : Customer ID
-        date_created        : the date the product was created
+        created        : the date the product was created
         description         : product specs and summary of a product 
         price               : a number to expose the price of a product
         product_type        : product type id 
