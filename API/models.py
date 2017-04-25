@@ -70,3 +70,18 @@ class Product(models.Model):
     description = models.CharField(max_length=255)
     customer = models.ForeignKey(Customer, related_name='customer')
     created = models.DateField()
+
+class Computer(models.Model):
+    '''author: Dean Smith
+    
+       This Class will act as API endpoint for Products
+
+        Attributes           : Computer ID
+        purchase_date        : The date when the company purchased the computer
+        decommission_date    : the date when computer is decommissioned by the company
+        computer_type        : Brand of company computer
+    '''
+    
+    purchase_date = models.DateField()
+    decommision_date = models.DateField()
+    computer_type = models.CharField(max_length=20)

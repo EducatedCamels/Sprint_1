@@ -56,3 +56,13 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Order
         fields = ('url', 'payment_type', 'customer', 'created')
+
+class ComputerSerializer(serializers.HyperlinkedModelSerializer):
+
+    """
+    Purpose: Takes database query for Computers data (from queryset on views.py) and serializes into json format
+    Author: Dean Smith
+    """
+    class Meta:
+        model = Computer
+        fields = ('url', 'purchase_date', 'decommision_date', 'computer_type')  

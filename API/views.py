@@ -55,3 +55,16 @@ class OrderViewSet(viewsets.ModelViewSet):
     '''
     queryset = Order.objects.all().order_by('customer')
     serializer_class = OrderSerializer    
+
+
+class ComputerViewSet(viewsets.ModelViewSet):
+    '''
+
+    API endpoint that allows Computers to be viewed or edited.
+        sorted by purchase date attribute
+
+    Author: Dean Smith
+    Purpose: Queries database for Computer data and sets up view for Computer Class (ordered by purchase date)
+    '''    
+    queryset = Computer.objects.all().order_by('purchase_date')
+    serializer_class = ComputerSerializer
