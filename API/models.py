@@ -19,8 +19,6 @@ class ProductType(models.Model):
     """
     category = models.CharField(max_length = 30)
 
-
-
 class PaymentType(models.Model):
     """
     Purpose: Expose Payment Type data to Client
