@@ -14,13 +14,32 @@ from API.models import *
 #         fields = ('url', 'name')
 
 class CustomerSerializer(serializers.HyperlinkedModelSerializer):
-
+	"""
+	Purpose: Takes database query for Customer data (from queryset on views.py) and serializes into json format
+	Author: Educated Camels
+	Method: none (yet)
+	"""
     class Meta:
         model = Customer
-        fields = ('url', 'First_Name', 'Last_Name', 'Created')  
+        fields = ('url', 'first_name', 'last_name', 'created')  
 
-class Product_TypeSerializer(serializers.HyperlinkedModelSerializer):
+class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
+	"""
+	Purpose: Takes database query for Product Type data (from queryset on views.py) and serializes into json format
+	Author: Dara Thomas
+	Method: none (yet)
+	"""
+    class Meta:
+        model = ProductType
+        exclude = ()  
+
+class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
+	"""
+	Purpose: Takes database query for Payment Type data (from queryset on views.py) and serializes into json format
+	Author: Harry Epstein
+	Method: none (yet)
+	"""
 
     class Meta:
-        model = Product_Type
-        exclude = ()  
+        model = PaymentType
+        fields = ('url', 'account_number', 'customer')
