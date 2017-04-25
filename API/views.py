@@ -31,7 +31,8 @@ class ProductTypeViewSet(viewsets.ModelViewSet):
     Purpose: Queries database for Product Type data and sets up view for Product Type
     Methods: none (yet)
     '''    
-    queryset = ProductType.objects.all()   
+
+    queryset = ProductType.objects.all()
     serializer_class = ProductTypeSerializer
 
 
