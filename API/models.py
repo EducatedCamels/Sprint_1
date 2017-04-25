@@ -84,7 +84,7 @@ class ProductOrder(models.Model):
     order = models.ForeignKey(Order)
     
 class Department(models.Model):
-	  '''
+	'''
     Purpose: Expose Department data to Client
     Author: Harry Epstein
     Method: none (yet)
