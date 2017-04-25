@@ -57,7 +57,7 @@ class TrainingProgramViewSet(viewsets.ModelViewSet):
     Purpose: Queries database for Training Program data and sets up view for TrainingPrograms
 
     """
-    queryset = TrainingProgram.objects.all().order_by('title')
+    queryset = TrainingProgram.objects.all()
     serializer_class = TrainingProgramSerializer 
 
 

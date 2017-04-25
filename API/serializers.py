@@ -58,7 +58,7 @@ class TrainingProgramSerializer(serializers.HyperlinkedModelSerializer):
     Author: Bri Wyatt
     """
     class Meta:
-        model = Order
+        model = TrainingProgram
         fields = ('url', 'title', 'start_date', 'end_date', 'class_capacity')
 
 
