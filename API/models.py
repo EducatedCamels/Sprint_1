@@ -12,28 +12,6 @@ class Customer(models.Model):
 	created = models.DateField()
 
 
-class Product(models.Model):
-    '''author: Bri Wyatt
-    
-       This Class will act as API endpoint for Products
-
-    	Attributes:
-        customer            : Customer ID
-        date_created        : the date the product was created
-        description         : product specs and summary of a product 
-        price               : a number to expose the price of a product
-        product_type        : product type id 
-        title               : the name of the product
-	
-    '''
-
-    price = models.FloatField()
-    title = models.CharField(max_length=255)
-    product_type = models.ForeignKey(ProductType, related_name='product')
-    description = models.CharField(max_length=255)
-    customer = models.ForeignKey(Customer, related_name='customer')
-    created = models.DateField()
-
 
 class ProductType(models.Model):
     """
@@ -60,3 +38,25 @@ class Order(models.Model):
     customer = models.ForeignKey(Customer) 
     payment_type = models.ForeignKey(PaymentType)   
 
+
+class Product(models.Model):
+    '''author: Bri Wyatt
+    
+       This Class will act as API endpoint for Products
+
+        Attributes:
+        customer            : Customer ID
+        date_created        : the date the product was created
+        description         : product specs and summary of a product 
+        price               : a number to expose the price of a product
+        product_type        : product type id 
+        title               : the name of the product
+    
+    '''
+
+    price = models.FloatField()
+    title = models.CharField(max_length=255)
+    product_type = models.ForeignKey(ProductType, related_name='product')
+    description = models.CharField(max_length=255)
+    customer = models.ForeignKey(Customer, related_name='customer')
+    created = models.DateField()
