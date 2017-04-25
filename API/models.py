@@ -12,7 +12,6 @@ class Customer(models.Model):
 	created = models.DateField()
 
 
-
 class ProductType(models.Model):
     """
     Purpose: Expose Product Type data to Client
@@ -55,3 +54,21 @@ class Product(models.Model):
     description = models.CharField(max_length=255)
     customer = models.ForeignKey(Customer, related_name='customer')
     created = models.DateField()
+
+class TrainingProgram(models.Model):
+    """
+    Purpose: Expose Training-Program data to Client
+    Author: Bri Wyatt
+    
+    """
+    title = models.CharField(max_length=255)
+    start_date = models.DateField()
+    end_date = models.DateField()
+    class_capacity = model.IntegerField()
+
+
+
+
+
+
+

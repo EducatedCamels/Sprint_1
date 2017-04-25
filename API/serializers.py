@@ -56,3 +56,22 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Order
         fields = ('url', 'payment_type', 'customer', 'created')
+
+class TrainingProgramSerialzer(serializers.HyperlinkedModelSerializer):
+    """
+    Purpose: Takes database query for Training Program Type data (from queryset on views.py) and serializes into json format
+    Author: Bri Wyatt
+    """
+    class Meta:
+        model = Order
+        fields = ('url', 'title', 'start_date', 'end_date', 'class_capacity')
+
+
+
+
+
+
+
+
+
+
