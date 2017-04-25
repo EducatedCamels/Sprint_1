@@ -46,3 +46,13 @@ class PaymentTypeViewSet(viewsets.ModelViewSet):
     '''
     queryset = PaymentType.objects.all().order_by('account_number')
     serializer_class = PaymentTypeSerializer
+
+class OrderViewSet(viewsets.ModelViewSet):
+    '''
+    Author: Miriam Rozenbaum
+    Purpose: Queries database for Order data and sets up view for Order
+    Methods: none (yet)
+    '''
+    queryset = Order.objects.all().order_by('customer')
+    serializer_class = OrderSerializer    
+
