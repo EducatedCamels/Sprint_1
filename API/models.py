@@ -9,7 +9,7 @@ class Customer(models.Model):
 	first_name = models.CharField(max_length = 15)
 	last_name = models.CharField(max_length = 25)
 	created = models.DateField()
-
+    
 class ProductType(models.Model):
     """
     Purpose: Expose Product Type data to Client
@@ -31,8 +31,8 @@ class Order(models.Model):
     Author: Miriam Rozenbaum
     '''
     created = models.DateField()
-    customer = models.ForeignKey(Customer) 
-    payment_type = models.ForeignKey(PaymentType)   
+    customer = models.ForeignKey(Customer)
+    payment_type = models.ForeignKey(PaymentType)
 
 
 class Product(models.Model):
@@ -48,6 +48,49 @@ class Product(models.Model):
     created = models.DateField()
 
 
+class Computer(models.Model):
+    '''author: Dean Smith
+    
+       This Class will act as API endpoint for Products
+
+        Attributes           : Computer ID
+        purchase_date        : The date when the company purchased the computer
+        decommission_date    : the date when computer is decommissioned by the company
+        computer_type        : Brand of company computer
+    '''
+    
+    purchase_date = models.DateField()
+    decommision_date = models.DateField()
+    computer_type = models.CharField(max_length=20)
+
+class TrainingProgram(models.Model):
+    """
+    Purpose: Expose Training-Program data to Client
+    Author: Bri Wyatt
+    
+    """
+    title = models.CharField(max_length=255)
+    start_date = models.DateField()
+    end_date = models.DateField()
+    class_capacity = models.IntegerField()
+
+
+class ProductOrder(models.Model):
+    '''
+    Purpose: Expose Product Order data to Client
+    Author: Miriam Rozenbaum
+    '''
+    product = models.ForeignKey(Product) 
+    order = models.ForeignKey(Order)
+    
+class Department(models.Model):
+	  '''
+    Purpose: Expose Department data to Client
+    Author: Harry Epstein
+    Method: none (yet)
+    '''
+	department_name = models.CharField(max_length=255)
+	budget = models.BigIntegerField()
 
 
 class Employee(models.Model):
@@ -68,4 +111,5 @@ class EmployeeTrainingProgram(models.Model):
     '''
     training_program = models.ForeignKey(TrainingProgram, related_name='training_program')
     employee = models.ForeignKey(Employee, related_name='employee')
+
 
