@@ -21,7 +21,8 @@ from API.models import *
 
 class CustomerViewSet(viewsets.ModelViewSet):
     '''
-    API endpoint that allows groups to be viewed or edited.
+    Author: group
+    Purpose: Sets up view for Customer Class
     '''    
     queryset = Customer.objects.all().order_by('Last_Name')
     serializer_class = CustomerSerializer
@@ -29,7 +30,17 @@ class CustomerViewSet(viewsets.ModelViewSet):
 
 class Product_TypeViewSet(viewsets.ModelViewSet):
     '''
-    API endpoint that allows groups to be viewed or edited.
+    Author: Dara Thomas
+    Purpose: Sets up view for Product_Type Class
     '''    
     queryset = Product_Type.objects.all()   
     serializer_class = Product_TypeSerializer
+
+
+class Payment_TypeViewSet(viewsets.ModelViewSet):
+    '''
+    Author: Harry Epstein
+    Purpose: Sets up view for Payment_Type Class
+    '''
+    queryset = Payment_Type.objects.all().order_by('Account_Number')
+    serializer_class = Payment_TypeSerializer

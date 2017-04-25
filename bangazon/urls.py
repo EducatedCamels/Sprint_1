@@ -8,7 +8,7 @@ router = routers.DefaultRouter()
 # router.register(r'groups', views.GroupViewSet)
 router.register(r'Customer', views.CustomerViewSet)
 router.register(r'Product_Type', views.Product_TypeViewSet)
-
+router.register(r'Payment_Type', views.Payment_TypeViewSet)
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [

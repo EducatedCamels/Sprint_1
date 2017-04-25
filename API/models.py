@@ -13,3 +13,11 @@ class Product_Type(models.Model):
 	Method: none (yet)
 	"""
 	Category = models.CharField(max_length = 30)
+
+
+
+
+class Payment_Type(models.Model):
+    Account_Number = models.IntegerField()
+    #Customer ID is equal to just an instance of the Customer Class
+    Customer_ID = models.ForeignKey(Customer)
