@@ -3,7 +3,6 @@ from rest_framework import viewsets
 from API.serializers import *
 from API.models import *
 
-
 # class UserViewSet(viewsets.ModelViewSet):
 #     """
 #     API endpoint that allows users to be viewed or edited.
@@ -21,26 +20,29 @@ from API.models import *
 
 class CustomerViewSet(viewsets.ModelViewSet):
     '''
-    Author: group
-    Purpose: Sets up view for Customer Class
+    Author: Educated Camels
+    Purpose: Queries database for Customer data and sets up view for Customer Class (ordered by last name)
+    Methods: none (yet)
     '''    
-    queryset = Customer.objects.all().order_by('Last_Name')
+    queryset = Customer.objects.all().order_by('last_name')
     serializer_class = CustomerSerializer
 
 
-class Product_TypeViewSet(viewsets.ModelViewSet):
+class ProductTypeViewSet(viewsets.ModelViewSet):
     '''
     Author: Dara Thomas
-    Purpose: Sets up view for Product_Type Class
+    Purpose: Queries database for Product Type data and sets up view for Product Type
+    Methods: none (yet)
     '''    
-    queryset = Product_Type.objects.all()   
-    serializer_class = Product_TypeSerializer
+    queryset = ProductType.objects.all()   
+    serializer_class = ProductTypeSerializer
 
 
 class Payment_TypeViewSet(viewsets.ModelViewSet):
     '''
     Author: Harry Epstein
-    Purpose: Sets up view for Payment_Type Class
+    Purpose: Queries database for Payment Type data and sets up view for Payment Type
+    Methods: none (yet)
     '''
-    queryset = Payment_Type.objects.all().order_by('Account_Number')
-    serializer_class = Payment_TypeSerializer
+    queryset = PaymentType.objects.all().order_by('account_number')
+    serializer_class = PaymentTypeSerializer
