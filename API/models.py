@@ -24,7 +24,7 @@ class Product(models.Model):
     '''
     price = models.FloatField()
     title = models.CharField(max_length=255)
-    product_type = models.ForeignKey(ProductType)
+    product_type = models.ForeignKey(ProductType, related_name='product')
     description = models.CharField(max_length=255)
     customer = models.ForeignKey(Customer, related_name='customer')
     created = models.DateField()
