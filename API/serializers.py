@@ -19,9 +19,9 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
 	Author: Educated Camels
 	Method: none (yet)
 	"""
-    class Meta:
-        model = Customer
-        fields = ('url', 'first_name', 'last_name', 'created')  
+	class Meta:
+		model = Customer
+		fields = ('url', 'first_name', 'last_name', 'created')  
 
 class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
 	"""
@@ -29,9 +29,9 @@ class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
 	Author: Dara Thomas
 	Method: none (yet)
 	"""
-    class Meta:
-        model = ProductType
-        exclude = ()  
+	class Meta:
+		model = ProductType
+		exclude = ()  
 
 class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
 	"""
@@ -40,6 +40,6 @@ class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
 	Method: none (yet)
 	"""
 
-    class Meta:
-        model = PaymentType
-        fields = ('url', 'account_number', 'customer')
+	class Meta:
+		model = PaymentType
+		fields = ('url', 'account_number', 'customer')

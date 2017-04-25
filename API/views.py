@@ -38,7 +38,7 @@ class ProductTypeViewSet(viewsets.ModelViewSet):
     serializer_class = ProductTypeSerializer
 
 
-class Payment_TypeViewSet(viewsets.ModelViewSet):
+class PaymentTypeViewSet(viewsets.ModelViewSet):
     '''
     Author: Harry Epstein
     Purpose: Queries database for Payment Type data and sets up view for Payment Type

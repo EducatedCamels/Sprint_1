@@ -7,9 +7,9 @@ class Customer(models.Model):
 	Author: Educated Camels
 	Method: none (yet)
 	"""
-    first_name = models.CharField(max_length = 15)  
-    last_name = models.CharField(max_length = 25)
-    created = models.DateField()
+	first_name = models.CharField(max_length = 15)
+	last_name = models.CharField(max_length = 25)
+	created = models.DateField()
 
 class ProductType(models.Model):
 	"""
@@ -28,6 +28,6 @@ class PaymentType(models.Model):
 	Author: Harry Epstein
 	Method: none (yet)
 	"""
-    account_number = models.IntegerField()
-    #Customer ID is equal to just an instance of the Customer Class
-    customer = models.ForeignKey(Customer)
+	account_number = models.IntegerField()
+	#Customer ID is equal to just an instance of the Customer Class
+	customer = models.ForeignKey(Customer)
