@@ -22,6 +22,8 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
         model = Product
         fields = ('url', 'price', 'title', 'product_type', 'description', 'customer', 'created')
 
+
+
         
 class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
     """
@@ -51,3 +53,13 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Order
         fields = ('url', 'payment_type', 'customer', 'created')
+
+        
+class ProductOrderSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    Purpose: Takes database query for Product Order data (from queryset on views.py) and serializes into json format
+    Author: Miriam Rozenbaum
+    """
+    class Meta:
+        model = ProductOrder
+        fields = ('url', 'product', 'order')

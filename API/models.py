@@ -46,3 +46,12 @@ class Product(models.Model):
     description = models.CharField(max_length=255)
     customer = models.ForeignKey(Customer)
     created = models.DateField()
+
+
+class ProductOrder(models.Model):
+    '''
+    Purpose: Expose Product Order data to Client
+    Author: Miriam Rozenbaum
+    '''
+    product = models.ForeignKey(Product) 
+    order = models.ForeignKey(Order)
