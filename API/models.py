@@ -47,12 +47,20 @@ class Product(models.Model):
     customer = models.ForeignKey(Customer)
     created = models.DateField()
 
+class ProductOrder(models.Model):
+    '''
+    Purpose: Expose Product Order data to Client
+    Author: Miriam Rozenbaum
+    '''
+    product = models.ForeignKey(Product) 
+    order = models.ForeignKey(Order)
+    
 class Department(models.Model):
 	'''
     Purpose: Expose Department data to Client
     Author: Harry Epstein
     Method: none (yet)
     '''
-
 	department_name = models.CharField(max_length=255)
 	budget = models.BigIntegerField()
+

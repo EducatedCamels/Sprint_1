@@ -52,6 +52,16 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
         model = Order
         fields = ('url', 'payment_type', 'customer', 'created')
 
+class ProductOrderSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    Purpose: Takes database query for Product Order data (from queryset on views.py) and serializes into json format
+    Author: Miriam Rozenbaum
+    """
+    class Meta:
+        model = ProductOrder
+        fields = ('url', 'product', 'order')
+
+        
 class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
     """
     Purpose: Takes database query for Department data (from queryset on views.py) and serializes into json format
@@ -62,3 +72,4 @@ class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Department
         fields = ('url', 'department_name', 'budget')
+
