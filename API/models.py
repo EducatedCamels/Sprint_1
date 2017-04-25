@@ -9,7 +9,7 @@ class Customer(models.Model):
 	first_name = models.CharField(max_length = 15)
 	last_name = models.CharField(max_length = 25)
 	created = models.DateField()
-
+    
 class ProductType(models.Model):
     """
     Purpose: Expose Product Type data to Client
@@ -47,6 +47,19 @@ class Product(models.Model):
     customer = models.ForeignKey(Customer)
     created = models.DateField()
 
+
+class TrainingProgram(models.Model):
+    """
+    Purpose: Expose Training-Program data to Client
+    Author: Bri Wyatt
+    
+    """
+    title = models.CharField(max_length=255)
+    start_date = models.DateField()
+    end_date = models.DateField()
+    class_capacity = models.IntegerField()
+
+
 class ProductOrder(models.Model):
     '''
     Purpose: Expose Product Order data to Client
@@ -63,4 +76,5 @@ class Department(models.Model):
     '''
 	department_name = models.CharField(max_length=255)
 	budget = models.BigIntegerField()
+
 
