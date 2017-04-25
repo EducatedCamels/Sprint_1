@@ -2,14 +2,17 @@ from django.db import models
 
 # Create your models here.
 class Customer(models.Model):
-    """
-    Purpose: Expose Customer data to Client
-    Author: Educated Camels
-    Method: none (yet)
-    """
-    first_name = models.CharField(max_length = 15)  
-    last_name = models.CharField(max_length = 25)
-    created = models.DateField()
+
+	"""
+	Purpose: Expose Customer data to Client
+	Author: Educated Camels
+	Method: none (yet)
+	"""
+	first_name = models.CharField(max_length = 15)
+	last_name = models.CharField(max_length = 25)
+	created = models.DateField()
+
+
 
 class ProductType(models.Model):
     """
@@ -22,6 +25,7 @@ class ProductType(models.Model):
 
 
 class PaymentType(models.Model):
+
     """
     Purpose: Expose Payment Type data to Client
     Author: Harry Epstein
@@ -35,4 +39,3 @@ class Order(models.Model):
     created = models.DateField()
     customer = models.ForeignKey(Customer) 
     payment_type = models.ForeignKey(PaymentType)   
-

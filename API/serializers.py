@@ -5,6 +5,7 @@ from API.models import *
 
 
 class CustomerSerializer(serializers.HyperlinkedModelSerializer):
+
     """
     Purpose: Takes database query for Customer data (from queryset on views.py) and serializes into json format
     Author: Educated Camels
@@ -14,6 +15,7 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
         model = Customer
         fields = ('url', 'first_name', 'last_name', 'created')  
 
+        
 class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
     """
     Purpose: Takes database query for Product Type data (from queryset on views.py) and serializes into json format
@@ -24,6 +26,7 @@ class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
         model = ProductType
         exclude = ()  
 
+        
 class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
     """
     Purpose: Takes database query for Payment Type data (from queryset on views.py) and serializes into json format
@@ -34,6 +37,7 @@ class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
         model = PaymentType
         fields = ('url', 'account_number', 'customer')
 
+        
 class OrderSerializer(serializers.HyperlinkedModelSerializer):
     """
     Purpose: Takes database query for Order data (from queryset on views.py) and serializes into json format
