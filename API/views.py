@@ -30,9 +30,7 @@ class CustomerViewSet(viewsets.ModelViewSet):
 
 
 class ProductViewSet(viewsets.ModelViewSet):
-    '''
-    API endpoint exposing data in Products
-    '''
+    
     queryset = ProductViewSet.objects.all()
     serializer_class = ProductSerializer
 

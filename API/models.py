@@ -10,20 +10,21 @@ class Customer(models.Model):
         return self.First_Name + self.Last_Name
 
 class Product(models.Model):
-    """by-briwyatt
+    '''author: Bri Wyatt
+    
+       This Class will act as API endpoint for Products
 
     Attributes:
-        Customer_ID         : expose Customer_ID
-        Date_Created        : expose the date the product was created
-        Description         : Specs and Summary of a product 
-        Price               : a number to expose the price of a product
-        Price_Type_ID       : category of product ("home goods")
-        Title               : the name of the product
-    """
-    Price = models.FloatField()
-    Title = models.CharField(max_length=255)
-    Product_Type_ID = models.ForeignKey(Product_Type_ID)
-    Description = models.CharField(max_length=255)
-    Customer_ID = models.ForeignKey(Customer, related_name='customer')
-    Created = models.DateField()
-
+        customer_ID         : Customer ID
+        date_Created        : the date the product was created
+        description         : product specs and summary of a product 
+        price               : a number to expose the price of a product
+        product_Type        : product type id 
+        title               : the name of the product
+    '''
+    price = models.FloatField()
+    title = models.CharField(max_length=255)
+    product_type = models.ForeignKey(ProductType)
+    description = models.CharField(max_length=255)
+    customer = models.ForeignKey(Customer, related_name='customer')
+    created = models.DateField()
