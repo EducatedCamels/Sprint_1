@@ -33,10 +33,12 @@ class CustomerViewSet(viewsets.ModelViewSet):
     queryset = Customer.objects.all().order_by('last_name')
     serializer_class = CustomerSerializer
 
-
-
 class ProductViewSet(viewsets.ModelViewSet):
-    
+    '''
+    Author: Bri Wyatt
+    Purpose: Queries database for Product data and sets up view for Product(s)
+    Methods: none (yet)
+    '''
     queryset = ProductViewSet.objects.all()
     serializer_class = ProductSerializer
 
