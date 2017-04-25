@@ -54,7 +54,7 @@ class OrderViewSet(viewsets.ModelViewSet):
     queryset = Order.objects.all().order_by('customer')
     serializer_class = OrderSerializer    
 
-class TrainingProgramSet(viewsets.ModelViewSet):
+class TrainingProgramViewSet(viewsets.ModelViewSet):
     """
     Author: Bri Wyatt 
     Purpose: Queries database for Training Program data and sets up view for TrainingPrograms

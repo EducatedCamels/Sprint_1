@@ -57,7 +57,7 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
         model = Order
         fields = ('url', 'payment_type', 'customer', 'created')
 
-class TrainingProgramSerialzer(serializers.HyperlinkedModelSerializer):
+class TrainingProgramSerializer(serializers.HyperlinkedModelSerializer):
     """
     Purpose: Takes database query for Training Program Type data (from queryset on views.py) and serializes into json format
     Author: Bri Wyatt

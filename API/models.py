@@ -64,7 +64,7 @@ class TrainingProgram(models.Model):
     title = models.CharField(max_length=255)
     start_date = models.DateField()
     end_date = models.DateField()
-    class_capacity = model.IntegerField()
+    class_capacity = models.IntegerField()
 
 
 
