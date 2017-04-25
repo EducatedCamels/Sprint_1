@@ -11,6 +11,9 @@ router.register(r'payment_type', views.PaymentTypeViewSet)
 router.register(r'order', views.OrderViewSet)
 router.register(r'product', views.ProductViewSet)
 router.register(r'trainingprogram', views.TrainingProgramViewSet)
+router.register(r'productorder', views.ProductOrderViewSet)
+router.register(r'department', views.DepartmentViewSet)
+
 
 
 # Wire up our API using automatic URL routing.
@@ -20,6 +23,3 @@ urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
-
-
-
