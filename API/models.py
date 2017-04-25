@@ -11,22 +11,24 @@ class Customer(models.Model):
 	last_name = models.CharField(max_length = 25)
 	created = models.DateField()
 
-    def __str__(self):
-        return self.First_Name + self.Last_Name
+    	def __str__(self):
+            return self.First_Name + self.Last_Name
 
 class Product(models.Model):
     '''author: Bri Wyatt
     
        This Class will act as API endpoint for Products
 
-    Attributes:
-        customer_ID         : Customer ID
-        date_Created        : the date the product was created
+    	Attributes:
+        customer            : Customer ID
+        date_created        : the date the product was created
         description         : product specs and summary of a product 
         price               : a number to expose the price of a product
-        product_Type        : product type id 
+        product_type        : product type id 
         title               : the name of the product
+	
     '''
+
     price = models.FloatField()
     title = models.CharField(max_length=255)
     product_type = models.ForeignKey(ProductType, related_name='product')
@@ -43,10 +45,7 @@ class ProductType(models.Model):
     """
     category = models.CharField(max_length = 30)
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 3c2ee9f4890c39418b3df0e568da000f2f868df4
 class PaymentType(models.Model):
 
     """
