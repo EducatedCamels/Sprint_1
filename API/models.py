@@ -31,8 +31,8 @@ class Order(models.Model):
     Author: Miriam Rozenbaum
     '''
     created = models.DateField()
-    customer = models.ForeignKey(Customer) 
-    payment_type = models.ForeignKey(PaymentType)   
+    customer = models.ForeignKey(Customer)
+    payment_type = models.ForeignKey(PaymentType)
 
 
 class Product(models.Model):
@@ -47,7 +47,6 @@ class Product(models.Model):
     customer = models.ForeignKey(Customer)
     created = models.DateField()
 
-
 class ProductOrder(models.Model):
     '''
     Purpose: Expose Product Order data to Client
@@ -55,3 +54,13 @@ class ProductOrder(models.Model):
     '''
     product = models.ForeignKey(Product) 
     order = models.ForeignKey(Order)
+    
+class Department(models.Model):
+	'''
+    Purpose: Expose Department data to Client
+    Author: Harry Epstein
+    Method: none (yet)
+    '''
+	department_name = models.CharField(max_length=255)
+	budget = models.BigIntegerField()
+

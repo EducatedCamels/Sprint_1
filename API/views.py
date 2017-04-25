@@ -12,10 +12,11 @@ class CustomerViewSet(viewsets.ModelViewSet):
 
     Author: Educated Camels
     Purpose: Queries database for Customer data and sets up view for Customer Class (ordered by last name)
-    '''    
+    '''
+    
     queryset = Customer.objects.all().order_by('last_name')
     serializer_class = CustomerSerializer
-    
+
 class ProductViewSet(viewsets.ModelViewSet):
     '''
     Author: Bri Wyatt
@@ -31,6 +32,9 @@ class ProductTypeViewSet(viewsets.ModelViewSet):
     Purpose: Queries database for Product Type data and sets up view for Product Type
     '''    
     queryset = ProductType.objects.all()   
+    Methods: none (yet)
+    '''
+    queryset = ProductType.objects.all()
     serializer_class = ProductTypeSerializer
 
 
@@ -57,3 +61,13 @@ class ProductOrderViewSet(viewsets.ModelViewSet):
     '''
     queryset = Order.objects.all().order_by('productorder')
     serializer_class = ProductOrderSerializer     
+
+class DepartmentViewSet(viewsets.ModelViewSet):
+    '''
+    Author: Harry Epstein
+    Purpose: Queries database for Department data and sets up view for Departmetn
+    Methods: none (yet)
+    '''
+    queryset = Department.objects.all().order_by('department_name')
+    serializer_class = DepartmentSerializer
+
