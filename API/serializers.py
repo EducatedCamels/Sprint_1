@@ -53,6 +53,7 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('url', 'payment_type', 'customer', 'created')
 
 
+
 class ComputerSerializer(serializers.HyperlinkedModelSerializer):
 
     """
@@ -62,6 +63,18 @@ class ComputerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Computer
         fields = ('url', 'purchase_date', 'decommision_date', 'computer_type')  
+
+        
+class TrainingProgramSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    Purpose: Takes database query for Training Program Type data (from queryset on views.py) and serializes into json format
+    Author: Bri Wyatt
+    """
+    class Meta:
+        model = TrainingProgram
+        fields = ('url', 'title', 'start_date', 'end_date', 'class_capacity')
+
+
 
 class ProductOrderSerializer(serializers.HyperlinkedModelSerializer):
     """
@@ -83,4 +96,5 @@ class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Department
         fields = ('url', 'department_name', 'budget')
+
 

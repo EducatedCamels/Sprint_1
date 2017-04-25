@@ -1,4 +1,3 @@
-
 from django.contrib.auth.models import *
 from rest_framework import viewsets
 from API.serializers import *
@@ -21,7 +20,6 @@ class ProductViewSet(viewsets.ModelViewSet):
     '''
     Author: Bri Wyatt
     Purpose: Queries database for Product data and sets up view for Product(s)
-    Methods: none (yet)
     '''
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
@@ -51,6 +49,7 @@ class OrderViewSet(viewsets.ModelViewSet):
     '''
     queryset = Order.objects.all().order_by('customer')
 
+
     serializer_class = OrderSerializer    
 
 
@@ -66,6 +65,18 @@ class ComputerViewSet(viewsets.ModelViewSet):
     queryset = Computer.objects.all().order_by('purchase_date')
     serializer_class = ComputerSerializer
 
+    serializer_class = OrderSerializer    
+
+class TrainingProgramViewSet(viewsets.ModelViewSet):
+    """
+    Author: Bri Wyatt 
+    Purpose: Queries database for Training Program data and sets up view for TrainingPrograms
+
+    """
+    queryset = TrainingProgram.objects.all()
+    serializer_class = TrainingProgramSerializer 
+
+    
 class ProductOrderViewSet(viewsets.ModelViewSet):
     '''
     Author: Miriam Rozenbaum
