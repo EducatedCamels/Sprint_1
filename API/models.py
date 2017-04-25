@@ -34,5 +34,5 @@ class PaymentType(models.Model):
 class Order(models.Model):
     created = models.DateField()
     customer = models.ForeignKey(Customer) 
-    payment = models.ForeignKey(PaymentType)   
+    payment_type = models.ForeignKey(PaymentType)   
 
