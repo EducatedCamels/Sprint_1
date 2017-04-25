@@ -46,3 +46,26 @@ class Product(models.Model):
     description = models.CharField(max_length=255)
     customer = models.ForeignKey(Customer)
     created = models.DateField()
+
+
+
+
+class Employee(models.Model):
+    '''
+    Purpose: Expose Employee data to Client
+    Author: Dara Thomas
+    '''
+    department = models.ForeignKey(Department, related_name='department')
+    first_name = models.CharField(max_length = 20)
+    last_name = models.CharField(max_length = 30)
+    is_supervisor = models.BooleanField( )
+
+
+class EmployeeTrainingProgram(models.Model):
+    '''
+    Purpose: Expose EmployeeTrainingProgram data to Client
+    Author: Dara Thomas
+    '''
+    training_program = models.ForeignKey(TrainingProgram, related_name='training_program')
+    employee = models.ForeignKey(Employee, related_name='employee')
+

@@ -52,3 +52,22 @@ class OrderViewSet(viewsets.ModelViewSet):
     '''
     queryset = Order.objects.all().order_by('customer')
     serializer_class = OrderSerializer    
+
+
+
+class EmployeeViewSet(viewsets.ModelViewSet):
+        '''
+    Author: Dara Thomas
+    Purpose: Queries database for Employee data and sets up view for Employee
+    '''
+    queryset = Employee.objects.all().order_by('department')
+    serializer_class = EmployeeSerializer
+
+
+class EmployeeTrainingProgramViewSet(viewsets.ModelViewSet):
+        '''
+    Author: Dara Thomas
+    Purpose: Queries database for EmployeeTrainingProgram data and sets up view for Employee
+    '''
+    queryset = EmployeeTrainingProgram.objects.all().order_by('training_program')
+    serializer_class = EmployeeTrainingProgramSerializer

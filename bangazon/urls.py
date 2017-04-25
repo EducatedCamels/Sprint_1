@@ -6,10 +6,12 @@ from API import views
 router = routers.DefaultRouter()
 
 router.register(r'customer', views.CustomerViewSet)
-router.register(r'product_type', views.ProductTypeViewSet)
-router.register(r'payment_type', views.PaymentTypeViewSet)
+router.register(r'producttype', views.ProductTypeViewSet)
+router.register(r'paymenttype', views.PaymentTypeViewSet)
 router.register(r'order', views.OrderViewSet)
 router.register(r'product', views.ProductViewSet)
+router.register(r'employee', views.EmployeeViewSet)
+router.register(r'employeetrainingprogram', views.EmployeeTrainingProgramViewSet)
 
 
 # Wire up our API using automatic URL routing.
