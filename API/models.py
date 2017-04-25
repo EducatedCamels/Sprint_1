@@ -21,9 +21,7 @@ class ProductType(models.Model):
     """
     category = models.CharField(max_length = 30)
 
-
 class PaymentType(models.Model):
-
     """
     Purpose: Expose Payment Type data to Client
     Author: Harry Epstein
@@ -34,15 +32,10 @@ class PaymentType(models.Model):
     customer = models.ForeignKey(Customer)
 
 class Order(models.Model):
-    '''author: Miriam Rozenbaum
-    
-       This Class will act as API endpoint for Order
-
-        Attributes:
-        customer            : Customer ID
-        created             : the date the order was created
-        payment_type        : type of payment used for order 
-    
+    '''
+    Purpose: Expose Order data to Client
+    Author: Miriam Rozenbaum
+    Method: none (yet)
     '''
     created = models.DateField()
     customer = models.ForeignKey(Customer) 
@@ -50,18 +43,10 @@ class Order(models.Model):
 
 
 class Product(models.Model):
-    '''author: Bri Wyatt
-    
-       This Class will act as API endpoint for Products
-
-        Attributes:
-        customer            : Customer ID
-        created        : the date the product was created
-        description         : product specs and summary of a product 
-        price               : a number to expose the price of a product
-        product_type        : product type id 
-        title               : the name of the product
-    
+    '''
+    Purpose: Expose Product data to Client
+    Author: Bri Wyatt
+    Method: none (yet) 
     '''
 
     price = models.FloatField()
