@@ -6,14 +6,11 @@ from API.models import *
 
 class CustomerViewSet(viewsets.ModelViewSet):
     '''
-
     API endpoint that allows groups to be viewed or edited.
         sorted by Last_Name attribute
 
     Author: Educated Camels
     Purpose: Queries database for Customer data and sets up view for Customer Class (ordered by last name)
-    Methods: none (yet)
-
     '''    
     queryset = Customer.objects.all().order_by('last_name')
     serializer_class = CustomerSerializer
