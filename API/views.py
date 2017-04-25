@@ -97,7 +97,7 @@ class DepartmentViewSet(viewsets.ModelViewSet):
 
 
 class EmployeeViewSet(viewsets.ModelViewSet):
-        '''
+    '''
     Author: Dara Thomas
     Purpose: Queries database for Employee data and sets up view for Employee
     '''
@@ -106,7 +106,7 @@ class EmployeeViewSet(viewsets.ModelViewSet):
 
 
 class EmployeeTrainingProgramViewSet(viewsets.ModelViewSet):
-        '''
+    '''
     Author: Dara Thomas
     Purpose: Queries database for EmployeeTrainingProgram data and sets up view for Employee
     '''
