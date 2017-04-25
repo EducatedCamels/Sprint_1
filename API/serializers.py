@@ -17,7 +17,11 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class ProductSerializer(serializers.HyperlinkedModelSerializer):
-
+    """
+    Purpose: Takes database query for Product data (from queryset on views.py) and serializes into json format
+    Author: Bri Wyatt
+    Method: none (yet)
+    """
     class Meta:
         model = Product
         fields = ('url', 'price', 'title', 'product_type', 'description', 'customer', 'date_created')
