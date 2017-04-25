@@ -11,15 +11,28 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
     """
     class Meta:
         model = Customer
+<<<<<<< HEAD
         fields = ('url', 'first_name', 'last_name', 'created')  
+=======
+
+        fields = ('url', 'First_Name', 'Last_Name', 'Created')  
+>>>>>>> 3c2ee9f4890c39418b3df0e568da000f2f868df4
 
 
 class ProductSerializer(serializers.HyperlinkedModelSerializer):
-
+    """
+    Purpose: Takes database query for Product data (from queryset on views.py) and serializes into json format
+    Author: Bri Wyatt
+    Method: none (yet)
+    """
     class Meta:
         model = Product
         fields = ('url', 'price', 'title', 'product_type', 'description', 'customer', 'date_created')
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 3c2ee9f4890c39418b3df0e568da000f2f868df4
 class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
     """
     Purpose: Takes database query for Product Type data (from queryset on views.py) and serializes into json format
@@ -51,7 +64,10 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Order
         fields = ('url', 'payment_type', 'customer', 'created')
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 3c2ee9f4890c39418b3df0e568da000f2f868df4

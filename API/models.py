@@ -43,7 +43,10 @@ class ProductType(models.Model):
     """
     category = models.CharField(max_length = 30)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3c2ee9f4890c39418b3df0e568da000f2f868df4
 class PaymentType(models.Model):
 
     """
