@@ -2,8 +2,6 @@ from django.contrib.auth.models import User, Group
 from rest_framework import serializers
 from API.models import *
 
-
-
 class CustomerSerializer(serializers.HyperlinkedModelSerializer):
 
     """
@@ -14,6 +12,17 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Customer
         fields = ('url', 'first_name', 'last_name', 'created')  
+
+
+class ProductSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    Purpose: Takes database query for Product data (from queryset on views.py) and serializes into json format
+    Author: Bri Wyatt
+    Method: none (yet)
+    """
+    class Meta:
+        model = Product
+        fields = ('url', 'price', 'title', 'product_type', 'description', 'customer', 'created')
 
         
 class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
