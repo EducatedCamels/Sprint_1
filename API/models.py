@@ -48,6 +48,21 @@ class Product(models.Model):
     created = models.DateField()
 
 
+class Computer(models.Model):
+    '''author: Dean Smith
+    
+       This Class will act as API endpoint for Products
+
+        Attributes           : Computer ID
+        purchase_date        : The date when the company purchased the computer
+        decommission_date    : the date when computer is decommissioned by the company
+        computer_type        : Brand of company computer
+    '''
+    
+    purchase_date = models.DateField()
+    decommision_date = models.DateField()
+    computer_type = models.CharField(max_length=20)
+
 class TrainingProgram(models.Model):
     """
     Purpose: Expose Training-Program data to Client
@@ -76,5 +91,25 @@ class Department(models.Model):
     '''
 	department_name = models.CharField(max_length=255)
 	budget = models.BigIntegerField()
+
+
+class Employee(models.Model):
+    '''
+    Purpose: Expose Employee data to Client
+    Author: Dara Thomas
+    '''
+    department = models.ForeignKey(Department, related_name='department')
+    first_name = models.CharField(max_length = 20)
+    last_name = models.CharField(max_length = 30)
+    is_supervisor = models.BooleanField( )
+
+
+class EmployeeTrainingProgram(models.Model):
+    '''
+    Purpose: Expose EmployeeTrainingProgram data to Client
+    Author: Dara Thomas
+    '''
+    training_program = models.ForeignKey(TrainingProgram, related_name='training_program')
+    employee = models.ForeignKey(Employee, related_name='employee')
 
 
