@@ -71,17 +71,6 @@ class TrainingProgramSerializer(serializers.HyperlinkedModelSerializer):
         model = TrainingProgram
         fields = ('url', 'title', 'start_date', 'end_date', 'class_capacity')
 
-
-
-# class ProductOrderSerializer(serializers.HyperlinkedModelSerializer):
-    """
-    Purpose: Takes database query for Product Order data (from queryset on views.py) and serializes into json format
-    Author: Miriam Rozenbaum
-    """
-    # class Meta:
-        # model = ProductOrder
-        # fields = ('url', 'product', 'order')
-
         
 class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
     """
@@ -94,16 +83,6 @@ class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
         model = Department
         fields = ('url', 'department_name', 'budget')
 
-# class EmployeeComputerSerializer(serializers.HyperlinkedModelSerializer):
-    """
-    docstring for EmployeeComputerSerializer
-    Purpose: Takes database query for Customer data (from queryset on views.py) and serializes into json format
-    Author: Dean Smith
-    """
-    # class Meta:
-        # model = EmployeeComputer
-        # fields = ('url', 'employee', 'computer', 'start_date', 'end_date')
-
 
 class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
     """
@@ -115,12 +94,3 @@ class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
         model = Employee
         fields = ('url', 'department', 'first_name', 'last_name', 'is_supervisor' )
 
-
-# class EmployeeTrainingProgramSerializer(serializers.HyperlinkedModelSerializer):
-    """
-    Purpose: Takes database query for EmployeeTrainingProgram data (from queryset on views.py) and serializes into json format
-    Author: Dara Thomas
-    """
-    # class Meta:
-        # model = EmployeeTrainingProgram
-        # fields = ('url', 'training_program', 'employee')
