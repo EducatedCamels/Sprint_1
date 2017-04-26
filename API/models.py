@@ -93,3 +93,18 @@ class Department(models.Model):
 	budget = models.BigIntegerField()
 
 
+class EmployeeComputer(object):
+    """docstring for EmployeeComputer
+    Purpose:To expose EmployeeComputer data
+    Author: Dean Smith
+    Atributes: EmployeeComputer ID
+
+    employee_id: This is the primary key from Emloyee class
+    computer_id: This is the primary key from Computer class
+    start_date: This is the date an employee starts with a computer
+    end_date: This is the date an employee ends with that computer
+    """
+    employee_id = models.ForeignKey(Employee)
+    computer_id = models.ForeignKey(Computer)
+    start_date = models.DateField()
+    end_date = models.DateField()

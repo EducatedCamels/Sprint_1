@@ -90,3 +90,10 @@ class DepartmentViewSet(viewsets.ModelViewSet):
     queryset = Department.objects.all().order_by('department_name')
     serializer_class = DepartmentSerializer
 
+class EmployeeComputerViewSet(viewsets.ModelViewSet):
+    """
+    Author: Dean Smith
+    Purpose: Queries database for Department data and sets up view for Departmetn
+    """
+    queryset = EmployeeComputer.objects.all().order_by('employee_id')
+    serializer_class = EmployeeComputerViewSet
