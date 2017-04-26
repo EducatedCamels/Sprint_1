@@ -98,7 +98,7 @@ class EmployeeComputerViewSet(viewsets.ModelViewSet):
     Purpose: Queries database for Department data and sets up view for Departmetn
     """
     queryset = EmployeeComputer.objects.all().order_by('employee_id')
-    serializer_class = EmployeeComputerViewSet
+    serializer_class = EmployeeComputerSerializer
 
 
 class EmployeeViewSet(viewsets.ModelViewSet):

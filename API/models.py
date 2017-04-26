@@ -94,7 +94,18 @@ class Department(models.Model):
 
 
 
-class EmployeeComputer(object):
+
+class Employee(models.Model):
+    '''
+    Purpose: Expose Employee data to Client
+    Author: Dara Thomas
+    '''
+    department = models.ForeignKey(Department, related_name='department')
+    first_name = models.CharField(max_length = 20)
+    last_name = models.CharField(max_length = 30)
+    is_supervisor = models.BooleanField( )
+
+class EmployeeComputer(models.Model):
     """docstring for EmployeeComputer
     Purpose:To expose EmployeeComputer data
     Author: Dean Smith
@@ -109,17 +120,6 @@ class EmployeeComputer(object):
     computer_id = models.ForeignKey(Computer)
     start_date = models.DateField()
     end_date = models.DateField()
-
-class Employee(models.Model):
-    '''
-    Purpose: Expose Employee data to Client
-    Author: Dara Thomas
-    '''
-    department = models.ForeignKey(Department, related_name='department')
-    first_name = models.CharField(max_length = 20)
-    last_name = models.CharField(max_length = 30)
-    is_supervisor = models.BooleanField( )
-
 
 class EmployeeTrainingProgram(models.Model):
     '''

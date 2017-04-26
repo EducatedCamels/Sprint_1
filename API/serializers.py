@@ -96,14 +96,14 @@ class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
         model = Department
         fields = ('url', 'department_name', 'budget')
 
-class EmployeeComputerSerializers(serializers.HyperlinkedModelSerializer):
+class EmployeeComputerSerializer(serializers.HyperlinkedModelSerializer):
     """
-    docstring for EmployeeComputerSerializers
+    docstring for EmployeeComputerSerializer
     Purpose: Takes database query for Customer data (from queryset on views.py) and serializes into json format
     Author: Dean Smith
     """
     class Meta:
-        model = EmployeeComputerSerializers
+        model = EmployeeComputer
         fields = ('url', 'employee_id', 'computer_id', 'start_date', 'end_date')
 
 
