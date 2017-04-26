@@ -23,7 +23,7 @@ class PaymentType(models.Model):
     Author: Harry Epstein
     """
     account_number = models.IntegerField()
-    customers = models.ForeignKey(Customer)
+    customer = models.ForeignKey(Customer)
 
 class Order(models.Model):
     '''
@@ -31,8 +31,8 @@ class Order(models.Model):
     Author: Miriam Rozenbaum
     '''
     created = models.DateField()
-    customers = models.ForeignKey(Customer)
-    payment_types = models.ForeignKey(PaymentType)
+    customer = models.ForeignKey(Customer)
+    payment_type = models.ForeignKey(PaymentType)
 
 
 class Product(models.Model):
@@ -44,8 +44,8 @@ class Product(models.Model):
     title = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
     created = models.DateField()
-    product_types = models.ForeignKey(ProductType)
-    customers = models.ForeignKey(Customer)
+    product_type = models.ForeignKey(ProductType)
+    customer = models.ForeignKey(Customer)
 
 
 class Computer(models.Model):
@@ -73,8 +73,8 @@ class ProductOrder(models.Model):
     Purpose: Expose Product Order data to Client
     Author: Miriam Rozenbaum
     '''
-    products = models.ForeignKey(Product) 
-    orders = models.ForeignKey(Order)
+    product = models.ForeignKey(Product) 
+    order = models.ForeignKey(Order)
     
 class Department(models.Model):
 	'''
@@ -95,7 +95,7 @@ class Employee(models.Model):
     first_name = models.CharField(max_length = 20)
     last_name = models.CharField(max_length = 30)
     is_supervisor = models.BooleanField()
-    departments = models.ForeignKey(Department)
+    department = models.ForeignKey(Department)
 
 class EmployeeComputer(models.Model):
     """
@@ -104,13 +104,13 @@ class EmployeeComputer(models.Model):
     """
     start_date = models.DateField()
     end_date = models.DateField()
-    employees = models.ForeignKey(Employee)
-    computers = models.ForeignKey(Computer)
+    employee = models.ForeignKey(Employee)
+    computer = models.ForeignKey(Computer)
 
 class EmployeeTrainingProgram(models.Model):
     '''
     Purpose: Expose EmployeeTrainingProgram data to Client
     Author: Dara Thomas
     '''
-    training_programs = models.ForeignKey(TrainingProgram)
-    employees = models.ForeignKey(Employee)
+    training_program = models.ForeignKey(TrainingProgram)
+    employee = models.ForeignKey(Employee)

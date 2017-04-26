@@ -19,7 +19,7 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
     """
     class Meta:
         model = Product
-        fields = ('url', 'price', 'title', 'product_types', 'description', 'customers', 'created')
+        fields = ('url', 'price', 'title', 'product_type', 'description', 'customer', 'created')
 
 
 class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
@@ -39,7 +39,7 @@ class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
     """
     class Meta:
         model = PaymentType
-        fields = ('url', 'account_number', 'customers')
+        fields = ('url', 'account_number', 'customer')
 
 
 class OrderSerializer(serializers.HyperlinkedModelSerializer):
@@ -49,7 +49,7 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
     """
     class Meta:
         model = Order
-        fields = ('url', 'payment_types', 'customers', 'created')
+        fields = ('url', 'payment_type', 'customer', 'created')
 
 
 class ComputerSerializer(serializers.HyperlinkedModelSerializer):
@@ -80,7 +80,7 @@ class TrainingProgramSerializer(serializers.HyperlinkedModelSerializer):
     """
     # class Meta:
         # model = ProductOrder
-        # fields = ('url', 'products', 'orders')
+        # fields = ('url', 'product', 'order')
 
         
 class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
@@ -102,7 +102,7 @@ class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
     """
     # class Meta:
         # model = EmployeeComputer
-        # fields = ('url', 'employees', 'computers', 'start_date', 'end_date')
+        # fields = ('url', 'employee', 'computer', 'start_date', 'end_date')
 
 
 class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
@@ -113,7 +113,7 @@ class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Employee
-        fields = ('url', 'departments', 'first_name', 'last_name', 'is_supervisor' )
+        fields = ('url', 'department', 'first_name', 'last_name', 'is_supervisor' )
 
 
 # class EmployeeTrainingProgramSerializer(serializers.HyperlinkedModelSerializer):
@@ -123,4 +123,4 @@ class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
     """
     # class Meta:
         # model = EmployeeTrainingProgram
-        # fields = ('url', 'training_programs', 'employees')
+        # fields = ('url', 'training_program', 'employee')

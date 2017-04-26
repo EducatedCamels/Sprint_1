@@ -46,7 +46,7 @@ class OrderViewSet(viewsets.ModelViewSet):
     Author: Miriam Rozenbaum
     Purpose: Queries database for Order data and sets up view for Order
     '''
-    queryset = Order.objects.all().order_by('customers')
+    queryset = Order.objects.all().order_by('customer')
     serializer_class = OrderSerializer    
 
 
@@ -96,7 +96,7 @@ class DepartmentViewSet(viewsets.ModelViewSet):
     Author: Dean Smith
     Purpose: Queries database for Department data and sets up view for Departmetn
     """
-    # queryset = EmployeeComputer.objects.all().order_by('employees')
+    # queryset = EmployeeComputer.objects.all().order_by('employee')
     # serializer_class = EmployeeComputerSerializer
 
 
@@ -105,7 +105,7 @@ class EmployeeViewSet(viewsets.ModelViewSet):
     Author: Dara Thomas
     Purpose: Queries database for Employee data and sets up view for Employee
     '''
-    queryset = Employee.objects.all().order_by('departments')
+    queryset = Employee.objects.all().order_by('department')
     serializer_class = EmployeeSerializer
 
 
@@ -114,5 +114,5 @@ class EmployeeViewSet(viewsets.ModelViewSet):
     Author: Dara Thomas
     Purpose: Queries database for EmployeeTrainingProgram data and sets up view for Employee
     '''
-    # queryset = EmployeeTrainingProgram.objects.all().order_by('training_programs')
+    # queryset = EmployeeTrainingProgram.objects.all().order_by('training_program')
     # serializer_class = EmployeeTrainingProgramSerializer
