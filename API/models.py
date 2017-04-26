@@ -93,6 +93,7 @@ class Department(models.Model):
 	budget = models.BigIntegerField()
 
 
+
 class EmployeeComputer(object):
     """docstring for EmployeeComputer
     Purpose:To expose EmployeeComputer data
@@ -108,3 +109,25 @@ class EmployeeComputer(object):
     computer_id = models.ForeignKey(Computer)
     start_date = models.DateField()
     end_date = models.DateField()
+
+class Employee(models.Model):
+    '''
+    Purpose: Expose Employee data to Client
+    Author: Dara Thomas
+    '''
+    department = models.ForeignKey(Department, related_name='department')
+    first_name = models.CharField(max_length = 20)
+    last_name = models.CharField(max_length = 30)
+    is_supervisor = models.BooleanField( )
+
+
+class EmployeeTrainingProgram(models.Model):
+    '''
+    Purpose: Expose EmployeeTrainingProgram data to Client
+    Author: Dara Thomas
+    '''
+    training_program = models.ForeignKey(TrainingProgram, related_name='training_program')
+    employee = models.ForeignKey(Employee, related_name='employee')
+
+
+
