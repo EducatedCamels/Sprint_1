@@ -92,6 +92,15 @@ class DepartmentViewSet(viewsets.ModelViewSet):
     serializer_class = DepartmentSerializer
 
 
+class EmployeeComputerViewSet(viewsets.ModelViewSet):
+    """
+    Author: Dean Smith
+    Purpose: Queries database for Department data and sets up view for Departmetn
+    """
+    queryset = EmployeeComputer.objects.all().order_by('employee_id')
+    serializer_class = EmployeeComputerSerializer
+
+
 class EmployeeViewSet(viewsets.ModelViewSet):
     '''
     Author: Dara Thomas
@@ -108,4 +117,3 @@ class EmployeeTrainingProgramViewSet(viewsets.ModelViewSet):
     '''
     queryset = EmployeeTrainingProgram.objects.all().order_by('training_program')
     serializer_class = EmployeeTrainingProgramSerializer
-
