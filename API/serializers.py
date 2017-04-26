@@ -3,7 +3,6 @@ from rest_framework import serializers
 from API.models import *
 
 class CustomerSerializer(serializers.HyperlinkedModelSerializer):
-
     """
     Purpose: Takes database query for Customer data (from queryset on views.py) and serializes into json format
     Author: Educated Camels
@@ -20,7 +19,7 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
     """
     class Meta:
         model = Product
-        fields = ('url', 'price', 'title', 'product_type', 'description', 'customer', 'created')
+        fields = ('url', 'price', 'title', 'product_types', 'description', 'customers', 'created')
 
 
 class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
@@ -40,7 +39,7 @@ class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
     """
     class Meta:
         model = PaymentType
-        fields = ('url', 'account_number', 'customer')
+        fields = ('url', 'account_number', 'customers')
 
 
 class OrderSerializer(serializers.HyperlinkedModelSerializer):
@@ -50,18 +49,17 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
     """
     class Meta:
         model = Order
-        fields = ('url', 'payment_type', 'customer', 'created')
+        fields = ('url', 'payment_types', 'customers', 'created')
 
 
 class ComputerSerializer(serializers.HyperlinkedModelSerializer):
-
     """
     Purpose: Takes database query for Computers data (from queryset on views.py) and serializes into json format
     Author: Dean Smith
     """
     class Meta:
         model = Computer
-        fields = ('url', 'purchase_date', 'decommision_date', 'computer_type')  
+        fields = ('url', 'purchase_date', 'decommission_date', 'computer_type')  
 
         
 class TrainingProgramSerializer(serializers.HyperlinkedModelSerializer):
@@ -75,14 +73,14 @@ class TrainingProgramSerializer(serializers.HyperlinkedModelSerializer):
 
 
 
-class ProductOrderSerializer(serializers.HyperlinkedModelSerializer):
+# class ProductOrderSerializer(serializers.HyperlinkedModelSerializer):
     """
     Purpose: Takes database query for Product Order data (from queryset on views.py) and serializes into json format
     Author: Miriam Rozenbaum
     """
-    class Meta:
-        model = ProductOrder
-        fields = ('url', 'product', 'order')
+    # class Meta:
+        # model = ProductOrder
+        # fields = ('url', 'products', 'orders')
 
         
 class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
@@ -96,15 +94,15 @@ class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
         model = Department
         fields = ('url', 'department_name', 'budget')
 
-class EmployeeComputerSerializer(serializers.HyperlinkedModelSerializer):
+# class EmployeeComputerSerializer(serializers.HyperlinkedModelSerializer):
     """
     docstring for EmployeeComputerSerializer
     Purpose: Takes database query for Customer data (from queryset on views.py) and serializes into json format
     Author: Dean Smith
     """
-    class Meta:
-        model = EmployeeComputer
-        fields = ('url', 'employee_id', 'computer_id', 'start_date', 'end_date')
+    # class Meta:
+        # model = EmployeeComputer
+        # fields = ('url', 'employees', 'computers', 'start_date', 'end_date')
 
 
 class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
@@ -115,15 +113,14 @@ class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Employee
-        fields = ('url', 'department', 'first_name', 'last_name', 'is_supervisor' )
+        fields = ('url', 'departments', 'first_name', 'last_name', 'is_supervisor' )
 
 
-class EmployeeTrainingProgramSerializer(serializers.HyperlinkedModelSerializer):
+# class EmployeeTrainingProgramSerializer(serializers.HyperlinkedModelSerializer):
     """
     Purpose: Takes database query for EmployeeTrainingProgram data (from queryset on views.py) and serializes into json format
     Author: Dara Thomas
     """
-
-    class Meta:
-        model = EmployeeTrainingProgram
-        fields = ('url', 'training_program', 'employee')
+    # class Meta:
+        # model = EmployeeTrainingProgram
+        # fields = ('url', 'training_programs', 'employees')
