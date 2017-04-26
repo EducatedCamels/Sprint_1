@@ -4,7 +4,7 @@ from API import views
 
 
 router = routers.DefaultRouter()
-
+#All routs for API resources
 router.register(r'customer', views.CustomerViewSet)
 router.register(r'producttype', views.ProductTypeViewSet)
 router.register(r'paymenttype', views.PaymentTypeViewSet)

@@ -101,7 +101,7 @@ class EmployeeComputerSerializers(serializers.HyperlinkedModelSerializer):
     """
     docstring for EmployeeComputerSerializers
     Purpose: Takes database query for Customer data (from queryset on views.py) and serializes into json format
-    Author: Educated Camels
+    Author: Dean Smith
     """
     class Meta:
         model = EmployeeComputerSerializers
