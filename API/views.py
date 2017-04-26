@@ -63,6 +63,7 @@ class ComputerViewSet(viewsets.ModelViewSet):
     queryset = Computer.objects.all().order_by('purchase_date')
     serializer_class = ComputerSerializer  
 
+
 class TrainingProgramViewSet(viewsets.ModelViewSet):
     """
     Author: Bri Wyatt 
@@ -89,4 +90,22 @@ class DepartmentViewSet(viewsets.ModelViewSet):
     '''
     queryset = Department.objects.all().order_by('department_name')
     serializer_class = DepartmentSerializer
+
+
+class EmployeeViewSet(viewsets.ModelViewSet):
+    '''
+    Author: Dara Thomas
+    Purpose: Queries database for Employee data and sets up view for Employee
+    '''
+    queryset = Employee.objects.all().order_by('department')
+    serializer_class = EmployeeSerializer
+
+
+class EmployeeTrainingProgramViewSet(viewsets.ModelViewSet):
+    '''
+    Author: Dara Thomas
+    Purpose: Queries database for EmployeeTrainingProgram data and sets up view for Employee
+    '''
+    queryset = EmployeeTrainingProgram.objects.all().order_by('training_program')
+    serializer_class = EmployeeTrainingProgramSerializer
 
