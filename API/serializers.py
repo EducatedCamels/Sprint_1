@@ -73,14 +73,14 @@ class TrainingProgramSerializer(serializers.HyperlinkedModelSerializer):
 
 
 
-class ProductOrderSerializer(serializers.HyperlinkedModelSerializer):
+# class ProductOrderSerializer(serializers.HyperlinkedModelSerializer):
     """
     Purpose: Takes database query for Product Order data (from queryset on views.py) and serializes into json format
     Author: Miriam Rozenbaum
     """
-    class Meta:
-        model = ProductOrder
-        fields = ('url', 'products', 'orders')
+    # class Meta:
+        # model = ProductOrder
+        # fields = ('url', 'products', 'orders')
 
         
 class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
@@ -94,15 +94,15 @@ class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
         model = Department
         fields = ('url', 'department_name', 'budget')
 
-class EmployeeComputerSerializer(serializers.HyperlinkedModelSerializer):
+# class EmployeeComputerSerializer(serializers.HyperlinkedModelSerializer):
     """
     docstring for EmployeeComputerSerializer
     Purpose: Takes database query for Customer data (from queryset on views.py) and serializes into json format
     Author: Dean Smith
     """
-    class Meta:
-        model = EmployeeComputer
-        fields = ('url', 'employees', 'computers', 'start_date', 'end_date')
+    # class Meta:
+        # model = EmployeeComputer
+        # fields = ('url', 'employees', 'computers', 'start_date', 'end_date')
 
 
 class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
@@ -116,11 +116,11 @@ class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('url', 'departments', 'first_name', 'last_name', 'is_supervisor' )
 
 
-class EmployeeTrainingProgramSerializer(serializers.HyperlinkedModelSerializer):
+# class EmployeeTrainingProgramSerializer(serializers.HyperlinkedModelSerializer):
     """
     Purpose: Takes database query for EmployeeTrainingProgram data (from queryset on views.py) and serializes into json format
     Author: Dara Thomas
     """
-    class Meta:
-        model = EmployeeTrainingProgram
-        fields = ('url', 'training_programs', 'employees')
+    # class Meta:
+        # model = EmployeeTrainingProgram
+        # fields = ('url', 'training_programs', 'employees')

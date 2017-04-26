@@ -12,7 +12,6 @@ class CustomerViewSet(viewsets.ModelViewSet):
     Author: Educated Camels
     Purpose: Queries database for Customer data and sets up view for Customer Class (ordered by last name)
     '''
-
     queryset = Customer.objects.all().order_by('last_name')
     serializer_class = CustomerSerializer
 
@@ -74,13 +73,13 @@ class TrainingProgramViewSet(viewsets.ModelViewSet):
     serializer_class = TrainingProgramSerializer 
 
     
-class ProductOrderViewSet(viewsets.ModelViewSet):
+# class ProductOrderViewSet(viewsets.ModelViewSet):
     '''
     Author: Miriam Rozenbaum
     Purpose: Queries database for Product Order data and sets up view for Order
     '''
-    queryset = Order.objects.all().order_by('productorder')
-    serializer_class = ProductOrderSerializer
+    # queryset = Order.objects.all().order_by('productorder')
+    # serializer_class = ProductOrderSerializer
 
 class DepartmentViewSet(viewsets.ModelViewSet):
     '''
@@ -92,13 +91,13 @@ class DepartmentViewSet(viewsets.ModelViewSet):
     serializer_class = DepartmentSerializer
 
 
-class EmployeeComputerViewSet(viewsets.ModelViewSet):
+# class EmployeeComputerViewSet(viewsets.ModelViewSet):
     """
     Author: Dean Smith
     Purpose: Queries database for Department data and sets up view for Departmetn
     """
-    queryset = EmployeeComputer.objects.all().order_by('employees')
-    serializer_class = EmployeeComputerSerializer
+    # queryset = EmployeeComputer.objects.all().order_by('employees')
+    # serializer_class = EmployeeComputerSerializer
 
 
 class EmployeeViewSet(viewsets.ModelViewSet):
@@ -110,10 +109,10 @@ class EmployeeViewSet(viewsets.ModelViewSet):
     serializer_class = EmployeeSerializer
 
 
-class EmployeeTrainingProgramViewSet(viewsets.ModelViewSet):
+# class EmployeeTrainingProgramViewSet(viewsets.ModelViewSet):
     '''
     Author: Dara Thomas
     Purpose: Queries database for EmployeeTrainingProgram data and sets up view for Employee
     '''
-    queryset = EmployeeTrainingProgram.objects.all().order_by('training_programs')
-    serializer_class = EmployeeTrainingProgramSerializer
+    # queryset = EmployeeTrainingProgram.objects.all().order_by('training_programs')
+    # serializer_class = EmployeeTrainingProgramSerializer

@@ -42,10 +42,10 @@ class Product(models.Model):
     '''
     price = models.FloatField()
     title = models.CharField(max_length=255)
-    product_types = models.ForeignKey(ProductType)
     description = models.CharField(max_length=255)
-    customers = models.ForeignKey(Customer)
     created = models.DateField()
+    product_types = models.ForeignKey(ProductType)
+    customers = models.ForeignKey(Customer)
 
 
 class Computer(models.Model):
@@ -92,20 +92,20 @@ class Employee(models.Model):
     Purpose: Expose Employee data to Client
     Author: Dara Thomas
     '''
-    departments = models.ForeignKey(Department)
     first_name = models.CharField(max_length = 20)
     last_name = models.CharField(max_length = 30)
-    is_supervisor = models.BooleanField( )
+    is_supervisor = models.BooleanField()
+    departments = models.ForeignKey(Department)
 
 class EmployeeComputer(models.Model):
     """
     Author: Dean Smith
     Atributes: EmployeeComputer ID
     """
-    employees = models.ForeignKey(Employee)
-    computers = models.ForeignKey(Computer)
     start_date = models.DateField()
     end_date = models.DateField()
+    employees = models.ForeignKey(Employee)
+    computers = models.ForeignKey(Computer)
 
 class EmployeeTrainingProgram(models.Model):
     '''
