@@ -74,7 +74,7 @@
   {
     "model": "API.Order",
     "fields": {
-      "created": "2017-04-18",
+      "created": null,
       "customer_id": 1,
       "payment_type": 2
     }
