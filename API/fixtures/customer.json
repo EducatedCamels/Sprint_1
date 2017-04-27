@@ -1,0 +1,82 @@
+[
+  {
+    "model": "API.Customer",
+    "fields": {
+      "first_name": "Harry",
+      "last_name": "Truman",
+      "created": "1976-11-25"
+    }
+  },
+  {
+    "model": "API.Customer",
+    "fields": {
+      "first_name": "Doris",
+      "last_name": "Day",
+      "created": "1967-11-25"
+    }
+  },
+  {
+    "model": "API.Customer",
+    "fields": {
+      "first_name": "Johnnie",
+      "last_name": "Ray",
+      "created": "1982-11-25"
+    }
+  },
+  {
+    "model": "API.Customer",
+    "fields": {
+      "first_name": "Walter",
+      "last_name": "Winchell",
+      "created": "1987-11-25"
+    }
+  },
+  {
+    "model": "API.Customer",
+    "fields": {
+      "first_name": "Joe",
+      "last_name": "DiMaggio",
+      "created": "1957-11-25"
+    }
+  },
+  {
+    "model": "API.Customer",
+    "fields": {
+      "first_name": "Joe",
+      "last_name": "McCarthy",
+      "created": "2005-11-25"
+    }
+  },
+  {
+    "model": "API.Customer",
+    "fields": {
+      "first_name": "Richard",
+      "last_name": "Nixon",
+      "created": "2005-11-25"
+    }
+  },
+  {
+    "model": "API.Customer",
+    "fields": {
+      "first_name": "Marilyn",
+      "last_name": "Monroe",
+      "created": "1960-11-25"
+    }
+  },
+  {
+    "model": "API.Customer",
+    "fields": {
+      "first_name": "Chubby",
+      "last_name": "Checker",
+      "created": "1960-11-25"
+    }
+  },
+  {
+    "model": "API.Customer",
+    "fields": {
+      "first_name": "John",
+      "last_name": "Glenn",
+      "created": "1962-09-25"
+    }
+  }
+]
