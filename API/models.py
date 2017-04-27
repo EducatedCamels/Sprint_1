@@ -54,7 +54,7 @@ class Computer(models.Model):
     Author: Dean Smith
     '''
     purchase_date = models.DateField()
-    decommission_date = models.DateField()
+    decommission_date = models.DateField(blank=True, null=True)
     computer_type = models.CharField(max_length=20)
 
 class TrainingProgram(models.Model):

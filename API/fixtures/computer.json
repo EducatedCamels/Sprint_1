@@ -1,0 +1,83 @@
+[
+  {
+    "model": "API.Computer",
+    "fields": {
+      "computer_type": "Dell",
+      "purchase_date": "2014-06-19",
+      "decommission_date": null
+    }
+  },
+  {
+    "model": "API.Computer",
+    "fields": {
+      "computer_type": "Macbook Pro",
+      "purchase_date": "2014-06-19",
+      "decommission_date": "2014-05-07"
+    }
+  },
+  {
+    "model": "API.Computer",
+    "fields": {
+      "computer_type": "Desk top",
+      "purchase_date": "2014-06-19",
+      "decommission_date": "2014-06-20"
+    }
+  },
+  {
+    "model": "API.Computer",
+    "fields": {
+      "computer_type": "Dell",
+      "purchase_date": "2014-06-19",
+      "decommission_date": null
+    }
+  },
+  {
+    "model": "API.Computer",
+    "fields": {
+      "computer_type": "MacBook air laptop",
+      "purchase_date": "2014-06-19",
+      "decommission_date": null
+    }
+  },
+  {
+    "model": "API.Computer",
+    "fields": {
+      "computer_type": "MacBook air laptop",
+      "purchase_date": "2014-06-19",
+      "decommission_date": null
+    }
+  },
+  {
+    "model": "API.Computer",
+    "fields": {
+      "computer_type": "MacBook air laptop",
+      "purchase_date": "2014-06-19",
+      "decommission_date": null
+    }
+  },
+  {
+    "model": "API.Computer",
+    "fields": {
+      "computer_type": "MacBook air laptop",
+      "purchase_date": "2014-06-19",
+      "decommission_date": null
+    }
+  },
+  {
+    "model": "API.Computer",
+    "fields": {
+      "computer_type": "MacBook air laptop",
+      "purchase_date": "2014-06-19",
+      "decommission_date": null
+    }
+  },
+  {
+    "model": "API.Computer",
+    "fields": {
+      "computer_type": "Asus",
+      "purchase_date": "2014-06-19",
+      "decommission_date": null
+    }
+  }
+
+]

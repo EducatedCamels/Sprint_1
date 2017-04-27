@@ -1,0 +1,93 @@
+[
+  {
+    "model": "API.Employee",
+    "fields": {
+      "department": 9,
+      "first_name": "Meg",
+      "last_name": "Ducharme",
+      "is_supervisor": 1
+    }
+  },
+  {
+    "model": "API.Employee",
+    "fields": {
+      "department": 9,
+      "first_name": "Miriam",
+      "last_name": "Rozenbaum",
+      "is_supervisor": 0
+    }
+  },
+  {
+    "model": "API.Employee",
+    "fields": {
+      "department": 9,
+      "first_name": "Bri",
+      "last_name": "Wyatt",
+      "is_supervisor": 0
+    }
+  },
+  {
+    "model": "API.Employee",
+    "fields": {
+      "department": 9,
+      "first_name": "Harry",
+      "last_name": "Epstein",
+      "is_supervisor": 0
+    }
+  },
+  {
+    "model": "API.Employee",
+    "fields": {
+      "department": 9,
+      "first_name": "Dara",
+      "last_name": "Thomas",
+      "is_supervisor": 0
+    }
+  },
+  {
+    "model": "API.Employee",
+    "fields": {
+      "department": 9,
+      "first_name": "Dean",
+      "last_name": "Smith",
+      "is_supervisor": 0
+    }
+  },
+  {
+    "model": "API.Employee",
+    "fields": {
+      "department": 9,
+      "first_name": "1/7/17",
+      "last_name": "",
+      "is_supervisor": 1
+    }
+  },
+  {
+    "model": "API.Employee",
+    "fields": {
+      "department": 9,
+      "first_name": "Edna",
+      "last_name": "Mode",
+      "is_supervisor": 0
+    }
+  },
+  {
+    "model": "API.Employee",
+    "fields": {
+      "department": 9,
+      "first_name": "Inigo",
+      "last_name": "Montoya",
+      "is_supervisor": 0
+    }
+  },
+  {
+    "model": "API.Employee",
+    "fields": {
+      "department": 9,
+      "first_name": "Rocky",
+      "last_name": "Balboa",
+      "is_supervisor": 0
+    }
+  }
+
+]
