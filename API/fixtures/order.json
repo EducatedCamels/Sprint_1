@@ -5,13 +5,14 @@
       "created": "2017-04-18",
       "customer": 1,
       "payment_type": 1
+      "payment_type": 2
     }
   },
   {
     "model": "API.Order",
     "fields": {
       "created": "2017-04-18",
-      "customer": 2,
+      "customer": 1,
       "payment_type": 2
     }
   },
@@ -21,6 +22,8 @@
       "created": "2017-04-18",
       "customer": 3,
       "payment_type": 3
+      "customer_id": 1,
+      "payment_type": 2
     }
   },
   {
@@ -29,6 +32,8 @@
       "created": "2017-04-18",
       "customer": 4,
       "payment_type": 1
+      "customer_id": 1,
+      "payment_type": 2
     }
   },
   {
@@ -36,6 +41,7 @@
     "fields": {
       "created": "2017-04-18",
       "customer": 5,
+      "customer_id": 1,
       "payment_type": 2
     }
   },
@@ -45,6 +51,8 @@
       "created": "2017-04-18",
       "customer": 6,
       "payment_type": 3
+      "customer_id": 1,
+      "payment_type": 2
     }
   },
   {
@@ -53,6 +61,8 @@
       "created": "2017-04-18",
       "customer": 7,
       "payment_type": 1
+      "customer_id": 1,
+      "payment_type": 2
     }
   },
   {
@@ -60,6 +70,7 @@
     "fields": {
       "created": "2017-04-18",
       "customer": 8,
+      "customer_id": 1,
       "payment_type": 2
     }
   },
@@ -69,6 +80,8 @@
       "created": "2017-04-18",
       "customer": 9,
       "payment_type": 3
+      "customer_id": 1,
+      "payment_type": 2
     }
   },
   {
@@ -77,6 +90,9 @@
       "created": "2017-04-18",
       "customer": 10,
       "payment_type": 1
+      "created": null,
+      "customer_id": 1,
+      "payment_type": 2
     }
   }
 ]
