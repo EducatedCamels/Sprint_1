@@ -30,7 +30,7 @@ class Order(models.Model):
     Purpose: Expose Order data to Client
     Author: Miriam Rozenbaum
     '''
-    created = models.DateField()
+    created = models.DateField(blank=True, null=True)
     customer = models.ForeignKey(Customer)
     payment_type = models.ForeignKey(PaymentType)
 
