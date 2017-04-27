@@ -1,0 +1,83 @@
+[
+	{
+			"model": "API.department",
+			"fields":{
+		    	"department_name": "Finance",
+		    	"budget": 200000
+			}
+	},
+
+	{
+			"model": "API.department",
+			"fields":{
+		    	"department_name": "Human Resources",
+		    	"budget": 62693
+			}
+	},
+
+	{
+
+			"model": "API.department",
+			"fields":{
+		    	"department_name": "Sales",
+		    	"budget": 93000
+			}
+	},
+
+	{
+			"model": "API.department",
+			"fields":{
+		    	"department_name": "Marketing",
+		    	"budget": 61000
+			}
+	},
+
+	{
+			"model": "API.department",
+			"fields":{
+		    	"department_name": "Customer Service",
+		    	"budget": 41000
+			}
+	},
+
+	{
+			"model": "API.department",
+			"fields":{
+		    	"department_name": "Legal",
+		    	"budget": 74000
+			}
+	},
+
+	{
+			"model": "API.department",
+			"fields":{
+		    	"department_name": "Engineering",
+		    	"budget": 45000
+			}
+	},
+
+	{
+			"model": "API.department",
+			"fields":{
+		    	"department_name": "Maintenance",
+		    	"budget": 41000
+			}
+	},
+
+	{
+			"model": "API.department",
+			"fields":{
+		    	"department_name": "IT",
+		    	"budget": 69000
+			}
+	},
+
+	{
+			"model": "API.department",
+			"fields":{
+		    	"department_name": "Research and Devlopment",
+		    	"budget": 84000
+			}
+	}
+
+]
