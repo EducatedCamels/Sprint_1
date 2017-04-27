@@ -79,7 +79,7 @@ class DepartmentViewSet(viewsets.ModelViewSet):
     Purpose: Queries database for Department data and sets up view for Departmetn
     Methods: none (yet)
     '''
-    queryset = Department.objects.all().order_by('department_name')
+    queryset = Department.objects.all().order_by('department_name').distinct()
     serializer_class = DepartmentSerializer
 
 class EmployeeViewSet(viewsets.ModelViewSet):
