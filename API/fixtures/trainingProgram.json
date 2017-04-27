@@ -1,0 +1,102 @@
+[
+  {
+    "model": "API.TrainingProgram",
+    "fields": {
+      "title": "Photo Shop",
+      "start_date": "2017-04-18",
+      "end_date": "2017-04-28",
+      "class_capacity": "45"
+
+    }
+  },
+  {
+    "model": "API.TrainingProgram",
+    "fields": {
+      "title": "Customer Service",
+      "start_date": "2017-04-18",
+      "end_date": "2017-04-28",
+      "class_capacity": "45"
+
+    }
+  },
+  {
+    "model": "API.TrainingProgram",
+    "fields": {
+      "title": "New Employee",
+      "start_date": "2017-04-18",
+      "end_date": "2017-04-28",
+      "class_capacity": "45"
+
+    }
+  },
+  {
+    "model": "API.TrainingProgram",
+    "fields": {
+      "title": "Supervisor",
+      "start_date": "2017-04-18",
+      "end_date": "2017-04-28",
+      "class_capacity": "45"
+
+    }
+  },
+  {
+    "model": "API.TrainingProgram",
+    "fields": {
+      "title": "Basic Computer",
+      "start_date": "2017-04-18",
+      "end_date": "2017-04-28",
+      "class_capacity": "45"
+
+    }
+  },
+  {
+    "model": "API.TrainingProgram",
+    "fields": {
+      "title": "Microsoft",
+      "start_date": "2017-04-18",
+      "end_date": "2017-04-28",
+      "class_capacity": "45"
+
+    }
+  },
+  {
+    "model": "API.TrainingProgram",
+    "fields": {
+      "title": "Sales",
+      "start_date": "2017-04-18",
+      "end_date": "2017-04-28",
+      "class_capacity": "45"
+
+    }
+  },
+  {
+    "model": "API.TrainingProgram",
+    "fields": {
+      "title": "Marketing",
+      "start_date": "2017-04-18",
+      "end_date": "2017-04-28",
+      "class_capacity": "45"
+
+    }
+  },
+  {
+    "model": "API.TrainingProgram",
+    "fields": {
+      "title": "Excel",
+      "start_date": "2017-04-18",
+      "end_date": "2017-04-28",
+      "class_capacity": "45"
+
+    }
+  },
+  {
+    "model": "API.TrainingProgram",
+    "fields": {
+      "title": "Advanced Computer",
+      "start_date": "2017-04-18",
+      "end_date": "2017-04-28",
+      "class_capacity": "45"
+
+    }
+  }
+]
