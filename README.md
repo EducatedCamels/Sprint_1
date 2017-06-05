@@ -4,9 +4,14 @@
 # Installations and other requirements for running the app
 * First fork this project to your repo and then clone it down to your machine. 
 * If you do not have Django and Django rest framework you will need `pip install django` and `pip install djangorestframework`
-* You will then need to run  the code by typing `python manage.py migrate` in your terminal. This will create the models for 
-* Start up your server by typing `python manage.py runserver`
-* To navigate to the API type `localhost:8000` to get to the user interface.
+* Then, run the following commands in your terminal:
+'''
+python manage.py makmigrations
+python manage.py migrate
+python manage.py createsuperuser (follow promps to generate login credentials)
+python manage.py runserver
+'''
+* To navigate to the API type `localhost:8000` in your browser to get to the user interface.
 
 ---
 # Purpose of the app
